@@ -1,6 +1,6 @@
 fn main() {
     let options = eframe::NativeOptions {
-        initial_window_size: Some(egui::vec2(300.0, 200.0)),
+        initial_window_size: Some(egui::vec2(300.0, 150.0)),
         ..Default::default()
     };
 
