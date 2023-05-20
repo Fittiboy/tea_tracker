@@ -1,11 +1,10 @@
-fn main() -> Result<(), Box<dyn std::error::Error>> {
+fn main() {
     let options = eframe::NativeOptions {
         initial_window_size: Some(egui::vec2(300.0, 200.0)),
         ..Default::default()
     };
 
-    eframe::run_native("Tea", options, Box::new(|_cc| Box::new(MyApp::default())));
-    Ok(())
+    eframe::run_native("Tea", options, Box::new(|_cc| Box::<MyApp>::default()));
 }
 
 struct MyApp {
